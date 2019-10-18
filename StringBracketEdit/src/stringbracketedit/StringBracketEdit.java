@@ -9,7 +9,6 @@ import java.util.Scanner;
  */
 public class StringBracketEdit {
 
-    
     public static void main(String[] args) {
         Scanner c = new Scanner(System.in);
         
@@ -27,9 +26,6 @@ public class StringBracketEdit {
             if(!inBracket)
                 newfileName = newfileName + fileName.charAt(i);
         }
-        
-        
         System.out.println("Rename is : " + newfileName);
     }
-    
 }
