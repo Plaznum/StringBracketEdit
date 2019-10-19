@@ -15,15 +15,15 @@ public class StringBracketEdit {
         String fileName = c.nextLine();
         String newfileName = "";
         boolean inBracket = false;
+        
         for(int i = 0; i<fileName.length(); i++){
             if(fileName.charAt(i)=='['){
                 inBracket = true;
             }else if(fileName.charAt(i)== ']' && inBracket == true){
                 inBracket = false;
-                i++;
             }
             
-            if(!inBracket)
+            if(!(fileName.charAt(i)== ']') && !inBracket)
                 newfileName = newfileName + fileName.charAt(i);
         }
         System.out.println("Rename is : " + newfileName);
